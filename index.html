@@ -3,65 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SKYCUBE - AI Solutions for the Future">
-    <title>SKYCUBE - AI Solutions</title>
+    <meta name="description" content="Nudging Animals - Nudging you towards better habits">
+    <title>Nudging Animals</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <!-- Header -->
+    <header class="header">
         <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <a href="index.html" id="logo-link">
-                        <img src="images/SkyCube_logo.png" alt="SKYCUBE" id="logo-image">
-                    </a>
+            <h1 class="logo">Nudging Animals</h1>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <main class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Projects</h2>
+                <p class="section-description">Nudging you towards better habits</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Nudging Turtle -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/nudging_turtle.png" alt="Nudging Turtle">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Nudging Turtle</h3>
+                        <p class="project-description">
+                            Mission Bay 지역의 Oracle Park와 Chase Center에서 열리는 이벤트 정보를 매일 이메일로 알려드립니다.
+                            야구 경기, 농구 경기, 콘서트 등 다양한 이벤트를 놓치지 마세요!
+                        </p>
+                        <ul class="project-features">
+                            <li>Oracle Park (SF Giants) 이벤트</li>
+                            <li>Chase Center (Warriors) 이벤트</li>
+                            <li>매일 이메일 알림</li>
+                        </ul>
+                    </div>
                 </div>
-                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-menu" id="nav-menu">
-                    <!-- Navigation items will be loaded dynamically -->
-                </ul>
+                <!-- Nudging Octopus -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/nudging_octopus.png" alt="Nudging Octopus">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Nudging Octopus</h3>
+                        <p class="project-description">
+                            팀원들에게 매일 운동 프로그램을 알려주고, 시즌이 끝나면 각자의 성과를 분석해 드립니다.
+                            함께 건강한 습관을 만들어 가세요!
+                        </p>
+                        <ul class="project-features">
+                            <li>매일 운동 프로그램 알림</li>
+                            <li>팀원 참여 현황 추적</li>
+                            <li>시즌 종료 후 성과 리포트</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <img src="images/Home-0001.png" alt="SKYCUBE - Build the Sky, Own the Future" class="hero-image">
-    </section>
-
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <div class="footer-logo">
-                        <span id="footer-logo-text">SKYCUBE</span>
-                    </div>
-                    <p id="footer-copyright">© 2025 SKYCUBE. All rights reserved.</p>
-                </div>
-                <div class="footer-social" id="footer-social">
-                    <!-- Social links will be loaded dynamically -->
-                </div>
-            </div>
+            <p>&copy; 2025 Nudging Animals. All rights reserved.</p>
         </div>
     </footer>
-
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
-
-    <!-- Load configuration and data files first -->
-    <script src="config.js"></script>
-    <script src="news.js"></script>
-    <!-- Then load main application script -->
-    <script src="main.js"></script>
 </body>
 </html>
