@@ -250,3 +250,86 @@ body {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
+/* ========================================
+   Subscribe Modal
+   ======================================== */
+button.project-link {
+    border: 0;
+    cursor: pointer;
+}
+
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-md);
+    background: rgba(20, 37, 39, 0.42);
+    backdrop-filter: blur(8px);
+}
+
+.modal-backdrop[hidden] {
+    display: none;
+}
+
+.modal-dialog {
+    position: relative;
+    width: min(100%, 460px);
+    border-radius: 16px;
+    background: white;
+    padding: var(--spacing-md);
+    box-shadow: var(--shadow-lg);
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 36px;
+    height: 36px;
+    border: 0;
+    border-radius: 999px;
+    background: #edf6f5;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.modal-title {
+    font-family: var(--font-primary);
+    font-size: 1.6rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.subscribe-form {
+    display: grid;
+    gap: var(--spacing-sm);
+}
+
+.form-field {
+    display: grid;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    border: 1px solid rgba(22, 120, 111, 0.24);
+    border-radius: 8px;
+    padding: 0.8rem 0.9rem;
+    color: var(--text-color);
+    font: inherit;
+    resize: vertical;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    outline: 3px solid rgba(22, 120, 111, 0.18);
+    border-color: var(--primary-color);
+}

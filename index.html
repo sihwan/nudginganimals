@@ -42,6 +42,7 @@
                             <li>Chase Center (Warriors) 이벤트</li>
                             <li>매일 이메일 알림</li>
                         </ul>
+                        <button class="project-link" type="button" data-open-subscribe>구독 문의하기</button>
                     </div>
                 </div>
                 <!-- Nudging Octopus -->
@@ -86,11 +87,30 @@
         </div>
     </main>
 
+    <div class="modal-backdrop" data-subscribe-modal hidden>
+        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="subscribe-title">
+            <button class="modal-close" type="button" data-close-subscribe aria-label="닫기">×</button>
+            <p class="project-kicker">Nudging Turtle</p>
+            <h2 id="subscribe-title" class="modal-title">구독 문의</h2>
+            <form class="subscribe-form" data-subscribe-form>
+                <label class="form-field">
+                    <span>이메일</span>
+                    <input type="email" name="email" placeholder="your@email.com" required>
+                </label>
+                <label class="form-field">
+                    <span>메모</span>
+                    <textarea name="message" rows="5" placeholder="구독하고 싶은 이유나 궁금한 점을 적어주세요."></textarea>
+                </label>
+                <button class="project-link" type="submit">메일 작성하기</button>
+            </form>
+        </div>
+    </div>
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 Nudging Animals. All rights reserved.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
