@@ -48,7 +48,7 @@ form?.addEventListener('submit', async (event) => {
     setStatus('전송 중입니다...', 'neutral');
 
     try {
-        const response = await fetch('https://turtle.nudginganimals.com/api/subscribe', {
+        const response = await fetch('/api/subscribe', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, message }),
