@@ -333,3 +333,23 @@ button.project-link {
     outline: 3px solid rgba(22, 120, 111, 0.18);
     border-color: var(--primary-color);
 }
+.project-link:disabled {
+    cursor: wait;
+    opacity: 0.68;
+    transform: none;
+}
+
+.form-status {
+    min-height: 1.4rem;
+    color: var(--light-text-color);
+    font-size: 0.92rem;
+    font-weight: 700;
+}
+
+.form-status[data-status="success"] {
+    color: var(--primary-color);
+}
+
+.form-status[data-status="error"] {
+    color: #b54335;
+}
